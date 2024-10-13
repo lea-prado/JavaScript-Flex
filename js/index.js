@@ -12,28 +12,11 @@ do {
 
     switch(option){
         case "1":
-            numero = prompt("Ingresa un numero:");
-            if(!isNaN(numero) && numero !== null){ //Nota: isNaN true si es un numero (Not A Number)
-                numero = parseFloat(numero); // Devuelve un numero de coma flotante
-                numeros.push(numero); //Agrego al array de numeros
-                suma += numero;
-                alert("Numero sumado. Suma actual:" + suma) //Muestro alerta con la suma
-                
-            }else{
-                alert("Nmero invalido.");
-            }
+            sumar(); //Llamo a mi funcion
             break;
 
         case "2":
-            numero = prompt("Ingresa un numero para restar:");
-            if(!isNaN(numero) && numero !==null){
-                numero = parseFloat(numero);
-                numeros.push(-numero); // Lo agrego como numero negativo
-                suma -= numero; //Resto el numero de la suma
-                alert("Numero restado. Suma actual:" + suma);
-            }else{
-                alert("Numero invalido");
-            }
+            restar();
             break;
         case "3":
             alert("La suma actual es:" + suma);
@@ -94,3 +77,31 @@ do {
     }
 
 }while (option !== "0"); //Si selecciono 0 salgo del do while
+
+function sumar() {
+    numero = prompt("Ingresa un numero:");
+    if(!isNaN(numero) && numero !== null){ //Nota: isNaN true si es un numero (Not A Number)
+        numero = parseFloat(numero); // Devuelve un numero de coma flotante
+        numeros.push(numero); //Agrego al array de numeros
+        suma += numero;
+        alert("Numero sumado. Suma actual:" + suma) //Muestro alerta con la suma
+        
+    }else{
+        alert("Nmero invalido.");
+    }
+};
+
+function restar(){
+    numero = prompt("Ingresa un numero para restar:");
+    if(!isNaN(numero) && numero !==null){
+        numero = parseFloat(numero);
+        numeros.push(-numero); // Lo agrego como numero negativo
+        suma -= numero; //Resto el numero de la suma
+        alert("Numero restado. Suma actual:" + suma);
+    }else{
+        alert("Numero invalido");
+    }
+}
+
+
+
