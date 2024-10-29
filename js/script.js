@@ -1,8 +1,8 @@
 //obtener carrito
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-//actualizar carrito
-function actualizarCarrito(){
+//Actualizar carrito
+function actualizarCarrito() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 // Función para actualizar el contador en el icono del carrito
@@ -13,12 +13,12 @@ function actualizarContadorCarrito() {
 }
 
 //Agregar producto al carrito
-function agregarAlCarrito(id, nombre, descripcion){
+function agregarAlCarrito(id, nombre, descripcion) {
     const productoExistente = carrito.find(producto => producto.id === id);
-    if (productoExistente){
+    if (productoExistente) {
         productoExistente.cantidad++;
     } else {
-        carrito.push({id, nombre, descripcion, cantidad: 1});
+        carrito.push({ id, nombre, descripcion, cantidad: 1 });
     }
     actualizarCarrito();
     alert(`${nombre} agregado al carrito`);
