@@ -1,0 +1,6 @@
+/* Estilos para el enlace activo en la barra de navegación */
+.nav-item .nav-link.active {
+    font-weight: bold; /* Por ejemplo, se muestra en negrita */
+    color: #ff0000; /* Por ejemplo, color rojo */
+    /* Agrega más estilos según tus preferencias */
+}
