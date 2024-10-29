@@ -12,7 +12,7 @@ function actualizarContadorCarrito() {
 
 }
 
-//agregar producto al carrito
+//Agregar producto al carrito
 function agregarAlCarrito(id, nombre, descripcion){
     const productoExistente = carrito.find(producto => producto.id === id);
     if (productoExistente){
@@ -25,7 +25,7 @@ function agregarAlCarrito(id, nombre, descripcion){
     location.reload();
 }
 
-// Evento para los botones de agregar al carrito
+// evento para los botones de agregar al carrito
 document.querySelectorAll('.agregarCarrito').forEach(boton => {
     boton.addEventListener('click', (e) => {
         const id = e.target.getAttribute('data-id');
