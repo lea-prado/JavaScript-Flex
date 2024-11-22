@@ -1,0 +1,56 @@
+[
+    {
+        "id" : 1,
+        "nombre" : "Camiseta Nacional",
+        "foto" : "./images/",
+        "precio" : 1500
+    },
+        {
+        "id" : 2,
+        "nombre" : "Short nacional",
+        "foto" : "./images/",
+        "precio" : 1500
+    },
+    {
+        "id" : 3,
+        "nombre" : "Pelota",
+        "foto" : "./images/producto1",
+        "precio" : 1500
+    },
+    {
+        "id" : 4,
+        "nombre" : "Buzo termico",
+        "foto" : "./images/",
+        "precio" : 1500
+    },
+    {
+        "id" : 5,
+        "nombre" : "Remera entrenamiento",
+        "foto" : "./images/",
+        "precio" : 1500
+    },
+    {
+        "id" : 6,
+        "nombre" : "Canilleras",
+        "foto" : "./images/",
+        "precio" : 1500
+    },
+    {
+        "id" : 7,
+        "nombre" : "Pantalon nacional",
+        "foto" : "./images/",
+        "precio" :1500
+    },
+    {
+        "id" :8,
+        "nombre" : "Championes",
+        "foto" : "./images/",
+        "precio" : 1500
+    },
+    {
+        "id" : 1,
+        "nombre" : "Cinta Capitan",
+        "foto" : "./images/",
+        "precio" : 1500
+    }
+]

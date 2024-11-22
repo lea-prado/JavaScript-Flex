@@ -4,3 +4,89 @@
     color: #ff0000; /* Por ejemplo, color rojo */
     /* Agrega más estilos según tus preferencias */
 }
+
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+/* Estilo para los productos en el carrito */
+#carrito-container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+#form-finalizar-compra {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+/* Estilo de mensaje de confirmación */
+#mensajeConfirmacion {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745;
+    text-align: center;
+}
+
+/* Centrado del formulario */
+.finalizar-compra-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+/* Para un mejor diseño en dispositivos pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .col-md-6 {
+        width: 90%;
+    }
+}
